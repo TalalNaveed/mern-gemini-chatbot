@@ -1,0 +1,91 @@
+.feedback-container {
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 6px;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+.icon-button:hover {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+.active-thumb-up {
+  color: #22c55e;
+  background-color: #e6f9ee;
+}
+
+.active-thumb-down {
+  color: #ef4444;
+  background-color: #ffecec;
+}
+
+.copy-btn {
+  margin-left: auto;
+  color: #666;
+}
+
+.copy-btn:hover {
+  color: #111;
+}
+
+.feedback-form {
+  background-color: #7acaf2;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.feedback-textarea {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 10px;
+  resize: none;
+  min-height: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+.feedback-submit {
+  align-self: flex-start;
+  background-color: #3ecf8e;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.feedback-submit:hover {
+  background-color: #2fb876;
+}
+
+.feedback-confirmed {
+  font-size: 14px;
+  color: #4caf50;
+  font-weight: 500;
+  padding-top: 4px;
+}
