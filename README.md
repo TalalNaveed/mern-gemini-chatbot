@@ -1,81 +1,82 @@
-Gemini Chatbot with Dashboard
+#💬 Gemini Chatbot with Dashboard
 A full-stack MERN + Python chatbot application featuring a ChatGPT-style interface, Gemini AI-powered responses, and a real-time performance dashboard.
 The project includes conversation history, thumbs up/down feedback, optional comment collection, and analytics tracking.
+##🚀 Features
 
-🚀 Features
-💬 Chatbot UI
-Clean, ChatGPT/Chainlit-inspired interface
+##Chatbot UI
 
-Real-time conversation updates with smooth scrolling
+ChatGPT/Chainlit-inspired, clean, user-friendly design
 
-Execution time displayed for each bot response
+Real-time chatbot conversation with smooth auto-scrolling
 
-Thumbs up/down feedback system for responses
+Execution time display for every bot response
 
-Feedback input box when thumbs down is given
+Thumbs up/down feedback with optional comment box on thumbs down
 
-Conversation history saved in MongoDB
+Fixed input bar at bottom of screen
 
-Loads past conversations from sidebar
+Conversation history stored in MongoDB and loaded from sidebar
 
-Input bar stays fixed at bottom while scrolling
+##Performance Dashboard
 
-📊 Dashboard
-Average response time
+Average response time tracking
 
-Failed response count
+Failed responses count
 
 Total Q&A interactions
 
 User feedback breakdown (Positive / Neutral / Negative)
 
-Weekly interaction chart
+Weekly interactions bar chart
 
-Recent feedback table (scrollable, all-time feedback)
+All-time feedback table with scroll support
 
-Responsive layout & scalable metrics section
+Space for adding more metrics in the future
 
-🛠 Backend
-Node.js + Express REST API
+##Backend Functionality
 
-MongoDB + Mongoose for data storage
+REST API endpoints for conversation and feedback management
 
-Gemini AI Integration (Google Generative AI) via Python backend
+MongoDB storage for conversations, feedback, and analytics
 
-Stores & retrieves full conversation history
+AI response generation using Google Gemini API via Python
 
-Aggregated analytics for dashboard
+Node.js–Python bridge for AI message generation
 
-⚙️ Technologies Used
-Frontend
-React.js (JavaScript)
-HTML5 + CSS3
-React Hooks (useState, useEffect, useRef)
-lucide react
-Chart.js (react-chartjs-2)
-Flexbox & Responsive Design
+Dashboard metrics aggregation
 
-Backend
-Node.js
+##🛠️ Built With
+##Frontend
 
-Express.js
+React.js – UI rendering & state management
 
-REST API principles
+HTML5 – Markup structure
 
-MongoDB (NoSQL database)
+CSS3 – Styling with custom responsive design
 
-Mongoose (MongoDB ORM)
+Chart.js & react-chartjs-2 – Data visualization
 
-AI Integration
-Python 3
+##Backend
 
-LangChain (langchain.chat_models)
+Node.js – Backend runtime environment
 
-LangGraph (state graph for chat flow)
+Express.js – REST API server
 
-Google Gemini API (google_genai:gemini-1.5-flash)
+MongoDB – NoSQL database
 
-APIs
+Mongoose – MongoDB ORM
+
+##AI Integration
+
+Python 3 – AI processing layer
+
+LangChain – Chat model integration
+
+LangGraph – State graph for chat flow
+
+Google Generative AI API (gemini-1.5-flash)
+
+##APIs
 Custom REST API endpoints for:
 
 Creating, reading, deleting conversations
@@ -88,9 +89,40 @@ Fetching dashboard metrics
 
 Generating Gemini AI replies
 
-📝 License
-MIT License
+##🎨 Key Components
+Chat Interface
 
-👨‍💻 Author
+Avatar-based message bubbles
+
+Smooth scrolling with useRef
+
+Typing indicator animation
+
+Fixed bottom input with send button
+
+##Dashboard
+
+Responsive card layout for metrics
+
+Scrollable feedback table with timestamps & comments
+
+Dynamic pie chart for feedback categories
+
+Weekly bar chart for user activity
+
+##Backend Logic
+
+Modular API routes (routes/chat.js, routes/gemini_generate.js)
+
+Feedback storage & retrieval
+
+Execution time calculation for each AI response
+
+##📸 Screenshots
+<img width="2228" height="1200" alt="image" src="https://github.com/user-attachments/assets/518f55e8-484c-406f-acf9-d7c0dd8fecf2" />
+<img width="1773" height="1200" alt="image" src="https://github.com/user-attachments/assets/3df713b4-9039-4777-bfa3-e0ecb8efa814" />
+
+
+##👨‍💻 Author
 Muhammad Talal Naveed
 MERN + AI Developer
