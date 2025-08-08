@@ -1,128 +1,207 @@
-#💬 Gemini Chatbot with Dashboard
-A full-stack MERN + Python chatbot application featuring a ChatGPT-style interface, Gemini AI-powered responses, and a real-time performance dashboard.
-The project includes conversation history, thumbs up/down feedback, optional comment collection, and analytics tracking.
-##🚀 Features
+# Tyntex - AI-Driven Digital Solutions
 
-##Chatbot UI
+Tyntex is a modern web application showcasing our comprehensive digital services including AI automation, data analytics, cloud solutions, and full stack development. Built with Next.js and powered by Supabase for robust backend functionality.
 
-ChatGPT/Chainlit-inspired, clean, user-friendly design
+## 🚀 Features
 
-Real-time chatbot conversation with smooth auto-scrolling
+- **AI Automation**: Intelligent automation solutions with MVP development, process automation, chatbots, and predictive analytics
+- **Data Analytics & Insights**: Business intelligence, machine learning models, data visualization, and real-time analytics
+- **Cloud Solutions**: Cloud migration, SaaS development, DevOps & CI/CD, and infrastructure management
+- **Full Stack Development**: Frontend development, backend services, mobile apps, and e-commerce solutions
+- **Contact Management**: Form submissions with database storage and email notifications
+- **Newsletter System**: Email subscription management with duplicate handling
 
-Execution time display for every bot response
+## 🛠️ Built With
 
-Thumbs up/down feedback with optional comment box on thumbs down
+- **Next.js 15.3.3** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Radix UI** - Primitive component library
+- **Lucide React** - Beautiful icon library
+- **Supabase** - PostgreSQL backend with real-time features
+- **Zod** - Schema validation for API endpoints
 
-Fixed input bar at bottom of screen
+## 🎨 Key Components
 
-Conversation history stored in MongoDB and loaded from sidebar
+- **Interactive Orbital Timeline**: Dynamic service showcases with animations
+- **Responsive Design**: Mobile-first approach with modern UI/UX
+- **3D Effects**: Tilt effects and interactive animations
+- **Gradient Animations**: Shiny text effects and smooth transitions
+- **Form Handling**: Contact forms and newsletter subscriptions with validation
+- **Database Integration**: PostgreSQL backend with Row Level Security
 
-##Performance Dashboard
+## 📁 Project Structure
 
-Average response time tracking
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── api/               # API routes
+│   │   ├── contact/       # Contact form endpoint
+│   │   ├── newsletter/    # Newsletter subscription endpoint
+│   │   └── projects/      # Projects data endpoint
+│   ├── services/          # Service category pages
+│   │   ├── ai-automation/
+│   │   ├── data-analytics/
+│   │   ├── cloud-solutions/
+│   │   └── web-app-development/
+│   ├── about/             # About us page
+│   ├── contact/           # Contact page
+│   └── projects/          # Projects showcase
+├── components/            # Reusable components
+│   ├── ui/               # UI components
+│   ├── sections/         # Page sections
+│   ├── layout/           # Layout components
+│   ├── forms/            # Form components
+│   └── icons/            # Custom icons
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions and Supabase config
+└── supabase/             # Database migrations and setup
+    └── migrations/       # SQL migration files
+```
 
-Failed responses count
+## 🚀 Getting Started
 
-Total Q&A interactions
+### Prerequisites
 
-User feedback breakdown (Positive / Neutral / Negative)
+- Node.js 18+ 
+- npm or yarn package manager
+- Supabase account (for backend functionality)
 
-Weekly interactions bar chart
+### Installation
 
-All-time feedback table with scroll support
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd tyntex
+   ```
 
-Space for adding more metrics in the future
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-##Backend Functionality
+3. Set up environment variables
+   ```bash
+   # Create .env.local file
+   cp .env.example .env.local
+   ```
 
-REST API endpoints for conversation and feedback management
+4. Configure Supabase
+   - Create a new Supabase project
+   - Get your project URL and API keys
+   - Update `.env.local` with your credentials:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+   SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+   ```
 
-MongoDB storage for conversations, feedback, and analytics
+5. Set up the database
+   - Go to your Supabase dashboard
+   - Navigate to SQL Editor
+   - Run the migration scripts from `supabase/migrations/`
 
-AI response generation using Google Gemini API via Python
+6. Run the development server
+   ```bash
+   npm run dev
+   ```
 
-Node.js–Python bridge for AI message generation
+7. Open [http://localhost:9002](http://localhost:9002) in your browser
 
-Dashboard metrics aggregation
+### Database Setup
 
-##🛠️ Built With
-##Frontend
+1. **Run Initial Schema Migration**:
+   ```sql
+   -- Copy and paste the contents of supabase/migrations/001_initial_schema.sql
+   -- This creates all necessary tables and indexes
+   ```
 
-React.js – UI rendering & state management
+2. **Add Sample Data** (Optional):
+   ```sql
+   -- Copy and paste the contents of supabase/migrations/002_sample_data.sql
+   -- This adds sample projects and services data
+   ```
 
-HTML5 – Markup structure
+### Build for Production
 
-CSS3 – Styling with custom responsive design
+```bash
+npm run build
+npm start
+```
 
-Chart.js & react-chartjs-2 – Data visualization
+## 📝 Available Scripts
 
-##Backend
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run typecheck` - Check TypeScript types
 
-Node.js – Backend runtime environment
+## 🎯 Key Features
 
-Express.js – REST API server
+### Interactive Service Pages
+Each service category has its own dedicated page with:
+- Hero section with animated backgrounds
+- Service overview cards
+- Interactive orbital timeline
+- Process workflows
+- Call-to-action sections
 
-MongoDB – NoSQL database
+### Backend Functionality
+- **Contact Form**: Saves inquiries to PostgreSQL database
+- **Newsletter System**: Email subscription management
+- **API Routes**: RESTful endpoints with validation
+- **Database Security**: Row Level Security (RLS) policies
+- **Error Handling**: Comprehensive validation and error messages
 
-Mongoose – MongoDB ORM
+### Modern UI/UX
+- Black and white minimalistic design
+- Smooth animations and transitions
+- Responsive across all devices
+- Accessible components
+- Form validation with real-time feedback
 
-##AI Integration
+### Performance Optimized
+- Static generation where possible
+- Optimized images and assets
+- Efficient bundle splitting
+- Fast loading times
+- Database query optimization
 
-Python 3 – AI processing layer
+## 🗄️ Database Schema
 
-LangChain – Chat model integration
+### Tables
+- **contacts**: Contact form submissions
+- **newsletter_subscribers**: Email subscriptions
+- **projects**: Portfolio projects
+- **services**: Service offerings
 
-LangGraph – State graph for chat flow
+### Security
+- Row Level Security (RLS) enabled
+- Public insert policies for forms
+- Authenticated read policies for admin data
 
-Google Generative AI API (gemini-1.5-flash)
+## 🌐 Live Demo
 
-##APIs
-Custom REST API endpoints for:
+Visit our website: [tyntex.com](https://tyntex.com)
 
-Creating, reading, deleting conversations
+## 🤝 Contributing
 
-Adding messages
+This is a proprietary project for Tyntex. For internal development inquiries, please contact the development team.
 
-Updating feedback with comments
+## 📧 Contact
 
-Fetching dashboard metrics
+- **Email**: info@tyntex.com
+- **Website**: [tyntex.com](https://tyntex.com)
 
-Generating Gemini AI replies
+## 👥 Team
 
-##🎨 Key Components
-Chat Interface
+Founded and developed by:
+- **Abdullah Sajid** - Co-Founder & Full-Stack Developer
+- **Asad Shahab** - Co-Founder & AI/ML Engineer  
+- **Talal Naveed** - Co-Founder & Cloud Solutions Architect
 
-Avatar-based message bubbles
+---
 
-Smooth scrolling with useRef
-
-Typing indicator animation
-
-Fixed bottom input with send button
-
-##Dashboard
-
-Responsive card layout for metrics
-
-Scrollable feedback table with timestamps & comments
-
-Dynamic pie chart for feedback categories
-
-Weekly bar chart for user activity
-
-##Backend Logic
-
-Modular API routes (routes/chat.js, routes/gemini_generate.js)
-
-Feedback storage & retrieval
-
-Execution time calculation for each AI response
-
-##📸 Screenshots
-<img width="2228" height="1200" alt="image" src="https://github.com/user-attachments/assets/518f55e8-484c-406f-acf9-d7c0dd8fecf2" />
-<img width="1773" height="1200" alt="image" src="https://github.com/user-attachments/assets/3df713b4-9039-4777-bfa3-e0ecb8efa814" />
-
-
-##👨‍💻 Author
-Muhammad Talal Naveed
-MERN + AI Developer
+© 2024 Tyntex. All rights reserved.
