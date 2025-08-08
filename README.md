@@ -62,6 +62,10 @@ The project includes conversation history, thumbs up/down feedback, optional com
 - MongoDB instance (local or Atlas)  
 - Google Gemini API key
 
-### 📧 Contact
--**Developer** - Muhammad Talal Naveed
--**Email** - mn3497@nyu.edu
+## 📧 Contact
+- **Developer** - Muhammad Talal Naveed
+- **Email** - mn3497@nyu.edu
+
+<img width="2228" height="1200" alt="image" src="https://github.com/user-attachments/assets/5ec31977-f64c-41c0-bc23-00a92789473c" />
+<img width="1773" height="1200" alt="image" src="https://github.com/user-attachments/assets/e6c7d286-6a86-4d68-9083-ef3fd29e6829" />
+
