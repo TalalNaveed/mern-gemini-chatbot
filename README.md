@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+Gemini Chatbot with Dashboard
+A full-stack MERN + Python chatbot application featuring a ChatGPT-style interface, Gemini AI-powered responses, and a real-time performance dashboard.
+The project includes conversation history, thumbs up/down feedback, optional comment collection, and analytics tracking.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features
+💬 Chatbot UI
+Clean, ChatGPT/Chainlit-inspired interface
 
-## Available Scripts
+Real-time conversation updates with smooth scrolling
 
-In the project directory, you can run:
+Execution time displayed for each bot response
 
-### `npm start`
+Thumbs up/down feedback system for responses
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Feedback input box when thumbs down is given
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Conversation history saved in MongoDB
 
-### `npm test`
+Loads past conversations from sidebar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Input bar stays fixed at bottom while scrolling
 
-### `npm run build`
+📊 Dashboard
+Average response time
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Failed response count
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Total Q&A interactions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+User feedback breakdown (Positive / Neutral / Negative)
 
-### `npm run eject`
+Weekly interaction chart
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Recent feedback table (scrollable, all-time feedback)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Responsive layout & scalable metrics section
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🛠 Backend
+Node.js + Express REST API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+MongoDB + Mongoose for data storage
 
-## Learn More
+Gemini AI Integration (Google Generative AI) via Python backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Stores & retrieves full conversation history
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Aggregated analytics for dashboard
 
-### Code Splitting
+⚙️ Technologies Used
+Frontend
+React.js (JavaScript)
+HTML5 + CSS3
+React Hooks (useState, useEffect, useRef)
+lucide react
+Chart.js (react-chartjs-2)
+Flexbox & Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend
+Node.js
 
-### Analyzing the Bundle Size
+Express.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+REST API principles
 
-### Making a Progressive Web App
+MongoDB (NoSQL database)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Mongoose (MongoDB ORM)
 
-### Advanced Configuration
+AI Integration
+Python 3
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+LangChain (langchain.chat_models)
 
-### Deployment
+LangGraph (state graph for chat flow)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Google Gemini API (google_genai:gemini-1.5-flash)
 
-### `npm run build` fails to minify
+APIs
+Custom REST API endpoints for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Creating, reading, deleting conversations
+
+Adding messages
+
+Updating feedback with comments
+
+Fetching dashboard metrics
+
+Generating Gemini AI replies
+
+📝 License
+MIT License
+
+👨‍💻 Author
+Muhammad Talal Naveed
+MERN + AI Developer
